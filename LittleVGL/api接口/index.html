@@ -11,15 +11,13 @@
       
       
       
-        <link rel="prev" href="../../Python/%E5%85%83%E7%BB%84/">
-      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>基础知识 - chen</title>
+        <title>Api接口 - chen</title>
       
     
     
@@ -108,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sram" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -143,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              基础知识
+              Api接口
             
           </span>
         </div>
@@ -305,16 +303,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
       
@@ -323,7 +319,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           LittleVGL学习笔记
@@ -334,21 +330,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="md-nav__link">
         基础知识
       </a>
-      
     </li>
   
 
@@ -393,29 +379,7 @@
                   
 
 
-<h1 id="sram">使用外部SRAM进行加速</h1>
-<p>我们将通过使用外部的大容量sram来给GUI应用增加流畅度,当然前提是你的发
-板已经配备了外部sram模块,为了能让littleVGL GUI增加运行流畅度,其影响因
-素还是很多的,我这里主要列出如下4个主要的原因：</p>
-<p>1.使用性能更好的处理器
-2.使用GPU或者DMA进行|ittleVGL显示缓冲区的拷贝操作
-3.尽量使用处理器内部的sram
-4.给littleVGL的显示缓冲区分配更大的空间，最好全屏大小的空间</p>
-<p>一、添加Sram驱动</p>
-<p><img alt="image-20230419192736081" src="../%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.assets/image-20230419192736081.png" /></p>
-<p>二、修改lv_port_disp文件</p>
-<p><img alt="image-20230419192031690" src="../%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.assets/image-20230419192031690.png" /></p>
-<p>三、初始化</p>
-<p><img alt="image-20230419193557776" src="../%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.assets/image-20230419193557776.png" /></p>
-<p><img alt="image-20230419192100971" src="../%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.assets/image-20230419192100971.png" /></p>
-<h1 id="littlevgl">littleVGL堆的内存分配</h1>
-<p>通过修改lv_conf.h 中的LV_MEM_ADR 为外部SRAM的地址即可</p>
-<h1 id="lv_conf">lv_conf配置文件详细</h1>
-<h2 id="1">1.定义最大的液晶屏分辨率</h2>
-<p>和此功能相关的配置项有2个,也就是所谓的2个宏定义,分别为: LV HOR_RES_MAX
-LVLVER_RES_MAX.
-利用这俩个配置项,再加上 LCD_Display_Dir(dir)函数可以实现屏幕的横屏和竖屏</p>
-<h2 id="_1">详细配置直接进入配置文件观看</h2>
+<h1 id="_1"></h1>
 
 
 
